@@ -3,6 +3,7 @@
     <import resource="classpath:RandomSpringQuote.spring.xml"/>
     <import resource="classpath:VariableJavaService.spring.xml"/>
     <import resource="classpath:credirisk.spring.xml"/>
+    <import resource="classpath:rule_engine_dev_v1.spring.xml"/>
     <import resource="classpath:securityService.spring.xml"/>
     <import resource="classpath:springquote.spring.xml"/>
 </beans>

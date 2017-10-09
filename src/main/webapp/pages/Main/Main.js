@@ -40,3 +40,17 @@ Application.$controller("listVariablesTable1Controller", ["$scope",
 		$scope.ctrlScope = $scope;
 	}
 ]);
+
+Application.$controller("RenVariableTable1Controller", ["$scope",
+	function($scope) {
+		"use strict";
+		$scope.ctrlScope = $scope;
+	}
+]);
+
+Application.$controller("RenVariableLiveForm1Controller", ["$scope",
+	function($scope) {
+		"use strict";
+		$scope.ctrlScope = $scope;
+	}
+]);

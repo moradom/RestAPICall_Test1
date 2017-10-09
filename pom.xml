@@ -34,6 +34,13 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/rule_engine_dev_v1/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/securityService/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -127,6 +134,7 @@
                                 <source>services/RandomSpringQuote/src</source>
                                 <source>services/VariableJavaService/src</source>
                                 <source>services/credirisk/src</source>
+                                <source>services/rule_engine_dev_v1/src</source>
                                 <source>services/securityService/src</source>
                                 <source>services/springquote/src</source>
                             </sources>
@@ -312,6 +320,11 @@
             <version>1.0</version>
             <scope>system</scope>
             <systemPath>${basedir}/lib/spring-swagger-codegen-api-client-0.0.1-SNAPSHOT.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
         </dependency>
     </dependencies>
     <dependencyManagement>

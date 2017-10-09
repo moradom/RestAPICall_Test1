@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="rule_engine_dev_v1" type="DataService" springFile="rule_engine_dev_v1.spring.xml">
+    <dataobjects/>
+</service>
