@@ -114,6 +114,32 @@
     "saveInPhonegap" : false,
     "controller" : "RandomSpringQuote"
   },
+  "staticVariable1" : {
+    "_id" : "wm-staticVariable1-wm.Variable-1507553880960",
+    "name" : "staticVariable1",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : 1507503600000
+    },
+    "type" : "date",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "staticVariable2" : {
+    "_id" : "wm-staticVariable2-wm.Variable-1507553938617",
+    "name" : "staticVariable2",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : 1507503600000
+    },
+    "type" : "date",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
   "VariableJavaServiceListVariables" : {
     "_id" : "wm-VariableJavaServiceListVariables-wm.ServiceVariable-1507129985530",
     "name" : "VariableJavaServiceListVariables",
