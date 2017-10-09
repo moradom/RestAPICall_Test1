@@ -16,33 +16,13 @@ Application.$controller("MainPageController", ["$scope", function ($scope) {
 
 }]);
 
-Application.$controller("getQuoteTable1Controller", ["$scope",
-	function($scope) {
-		"use strict";
-		$scope.ctrlScope = $scope;
-	}
-]);
 
-Application.$controller("getQuoteTable1_1Controller", ["$scope",
-	function($scope) {
-		"use strict";
-		$scope.ctrlScope = $scope;
-	}
-]);
 
-Application.$controller("listVariablesTable1Controller", ["$scope",
-	function($scope) {
-		"use strict";
-		$scope.ctrlScope = $scope;
-	}
-]);
 
-Application.$controller("crediriskTable1Controller", ["$scope",
-	function($scope) {
-		"use strict";
-		$scope.ctrlScope = $scope;
-	}
-]);
+
+
+
+
 
 Application.$controller("listVariablesTable1_1Controller", ["$scope",
 	function($scope) {
