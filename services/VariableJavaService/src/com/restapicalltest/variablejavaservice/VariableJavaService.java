@@ -68,7 +68,7 @@ public class VariableJavaService {
 
     public List<Variable> listVariables(HttpServletRequest request) {
         logger.debug("Starting sample operation with request url " + request.getRequestURL().toString());
-        
+         
         return variableApi.listVariables();
     }
 }

@@ -23,11 +23,15 @@ public class VariableJavaController {
     private VariableJavaService variableJavaService;
 
     @RequestMapping(value = "/variables", method = RequestMethod.GET)
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @ApiOperation(value = "")
     public List<Variable> listVariables(HttpServletRequest request) {
         return variableJavaService.listVariables(request);
     }
 
     @RequestMapping(value = "/sampleJavaOperation", produces = "application/json", method = RequestMethod.GET)
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @ApiOperation(value = "")
     public String sampleJavaOperation(@RequestParam(value = "name", required = false) String name, HttpServletRequest request) {
         return variableJavaService.sampleJavaOperation(name, request);
     }
