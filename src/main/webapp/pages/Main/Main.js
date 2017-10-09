@@ -33,3 +33,10 @@ Application.$controller("listVariablesTable1_1Controller", ["$scope",
         }
     }
 ]);
+
+Application.$controller("listVariablesTable1Controller", ["$scope",
+	function($scope) {
+		"use strict";
+		$scope.ctrlScope = $scope;
+	}
+]);
