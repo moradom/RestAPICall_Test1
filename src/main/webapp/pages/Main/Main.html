@@ -6,7 +6,7 @@
         <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px">
             <wm-composite name="composite1">
                 <wm-table name="listVariablesTable1" title="" dataset="bind:Variables.VariableJavaServiceListVariables4.dataSet" navigation="Basic">
-                    <wm-table-column binding="quantity" caption="Quantity" edit-widget-type="number" type="integer" show="true" readonly="false"></wm-table-column>
+                    <wm-table-column binding="quantity" caption="Quantity" edit-widget-type="number" type="integer" datepattern="yyyy-MM-dd hh:mm:ss a" formatpattern="toDate" show="true" readonly="false"></wm-table-column>
                     <wm-table-column binding="name" caption="Name" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>
                     <wm-table-column binding="id" caption="Id" edit-widget-type="number" type="long" show="true" readonly="false"></wm-table-column>
                     <wm-table-column binding="enabled" caption="Enabled" edit-widget-type="checkbox" type="boolean" show="true" readonly="false"></wm-table-column>
