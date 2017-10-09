@@ -136,5 +136,28 @@
     "saveInPhonegap" : false,
     "isDefault" : true,
     "controller" : "VariableJava"
+  },
+  "VariableJavaServiceListVariables1" : {
+    "_id" : "wm-VariableJavaServiceListVariables1-wm.ServiceVariable-1507544888383",
+    "name" : "VariableJavaServiceListVariables1",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.baeldung.petstore.client.model.Variable",
+    "service" : "VariableJavaService",
+    "operation" : "listVariables",
+    "operationId" : "VariableJavaController_listVariables",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "VariableJava"
   }
 }
