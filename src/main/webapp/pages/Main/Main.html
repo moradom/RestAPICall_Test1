@@ -22,6 +22,12 @@
                     <wm-table-column binding="cDate.millis" caption="Current Date" edit-widget-type="datetime" type="datetime" datepattern="yyyy-MM-dd HH:mm:ss:sss" formatpattern="toDate" searchable="false" show="true" readonly="false"></wm-table-column>
                 </wm-table>
             </wm-composite>
+            <wm-composite name="composite2">
+                <wm-label class="col-md-3 control-label" name="label1"></wm-label>
+                <wm-container class="col-md-9" name="container1">
+                    <wm-text name="text1" type="datetime-local"></wm-text>
+                </wm-container>
+            </wm-composite>
         </wm-page-content>
         <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>
