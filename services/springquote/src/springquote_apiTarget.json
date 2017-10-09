@@ -1,0 +1,71 @@
+{
+  "basePath" : "${rest.springquote.basepath}",
+  "paths" : {
+    "/random" : {
+      "x-WM-BASE_PATH" : "/random",
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-RELATIVE_PATH" : "",
+      "get" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "operationId" : "springquote_RestServiceVirtualController-invoke",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            },
+            "description" : "Success"
+          }
+        },
+        "tags" : [ "RestServiceVirtualController" ],
+        "consumes" : [ "text/xml" ]
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.springquote.scheme}://${rest.springquote.host}${rest.springquote.basepath}/random"
+    }
+  },
+  "host" : "${rest.springquote.host}",
+  "schemes" : [ "${rest.springquote.scheme}" ],
+  "definitions" : {
+    "value" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "springquote.value",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "required" : [ "id", "quote" ],
+      "properties" : {
+        "quote" : {
+          "type" : "string"
+        },
+        "id" : {
+          "format" : "int32",
+          "type" : "integer"
+        }
+      }
+    },
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "springquote.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "required" : [ "type", "value" ],
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "value" : {
+          "$ref" : "#/definitions/value"
+        }
+      }
+    }
+  },
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "e56b31f9-619f-47ad-bb6a-68c475e40c12",
+    "x-WM-SERVICE_ID" : "cfapps",
+    "version" : "2.0",
+    "x-WM-SERVICE_TYPE" : "RestService"
+  },
+  "tags" : [ {
+    "name" : "RestServiceVirtualController",
+    "description" : "Rest service swagger documentation"
+  } ]
+}

@@ -1,0 +1,43 @@
+<wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="Main">
+    <wm-header content="header" name="header" height="auto"></wm-header>
+    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
+    <wm-content name="XXX">
+        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
+        <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px">
+            <wm-composite name="composite1">
+                <wm-table name="crediriskTable1" title="" dataset="bind:Variables.CrediriskInvoke.dataSet" navigation="Basic">
+                    <wm-table-column binding="cDate" caption="C Date" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                    <wm-table-column binding="cdate" caption="Cdate" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                    <wm-table-column binding="quantity" caption="Quantity" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                    <wm-table-column binding="name" caption="Name" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                    <wm-table-column binding="id" caption="Id" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                    <wm-table-column binding="enabled" caption="Enabled" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                </wm-table>
+                <wm-label class="col-md-3 control-label" name="label1"></wm-label>
+                <wm-container class="col-md-9" name="container1">
+                    <wm-text name="Username" datavalue="bind:Variables.serviceVariable1.dataSet.value.quote" on-click="Variables.serviceVariable1.invoke()"></wm-text>
+                </wm-container>
+                <wm-table name="listVariablesTable1" title="" dataset="bind:Variables.VariableJavaServiceListVariables.dataSet" navigation="Basic">
+                    <wm-table-column binding="quantity" caption="Quantity" pcdisplay="true" mobiledisplay="true" type="integer"></wm-table-column>
+                    <wm-table-column binding="name" caption="Name" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                    <wm-table-column binding="id" caption="Id" pcdisplay="true" mobiledisplay="true" type="long"></wm-table-column>
+                    <wm-table-column binding="enabled" caption="Enabled" pcdisplay="true" mobiledisplay="true" type="boolean"></wm-table-column>
+                    <wm-table-column binding="cDate.iChronology" caption="Cdate I Chronology" pcdisplay="true" mobiledisplay="true" type="chronology"></wm-table-column>
+                    <wm-table-column binding="cDate.iMillis" caption="Cdate I Millis" pcdisplay="true" mobiledisplay="true" type="long"></wm-table-column>
+                </wm-table>
+            </wm-composite>
+            <wm-table name="getQuoteTable1_1" title="" dataset="bind:Variables.RandomSpringQuoteGetQuote.dataSet" navigation="Basic">
+                <wm-table-column binding="type" caption="Type" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="value.quote" caption="Value Quote" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="value.id" caption="Value Id" pcdisplay="true" mobiledisplay="true" type="long"></wm-table-column>
+            </wm-table>
+            <wm-table name="getQuoteTable1" title="Titulo" dataset="bind:Variables.serviceVariable1.dataSet" navigation="Basic">
+                <wm-table-column binding="type" caption="Type" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="value.quote" caption="Value Quote" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="value.id" caption="Value Id" pcdisplay="true" mobiledisplay="true" type="long"></wm-table-column>
+            </wm-table>
+        </wm-page-content>
+        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
+    </wm-content>
+    <wm-footer name="footer" content="footer"></wm-footer>
+</wm-page>

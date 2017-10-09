@@ -1,0 +1,25 @@
+{
+  "endpointAddress" : "http://gturnquist-quoters.cfapps.io/api/random",
+  "method" : "GET",
+  "headers" : { },
+  "redirectEnabled" : true,
+  "requestBody" : "",
+  "queryParams" : { },
+  "authDetails" : null,
+  "contentType" : "text/xml",
+  "multiParamInfoList" : null,
+  "sampleHttpResponseDetails" : {
+    "statusCode" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json;charset=UTF-8" ],
+      "Date" : [ "Tue, 03 Oct 2017 13:58:01 GMT" ],
+      "Server" : [ "Apache-Coyote/1.1" ],
+      "X-Vcap-Request-Id" : [ "b6e8017d-0033-40b5-4b66-8ab5562ed19f" ],
+      "Content-Length" : [ "109" ],
+      "Connection" : [ "keep-alive" ]
+    },
+    "responseBody" : "{\"type\":\"success\",\"value\":{\"id\":10,\"quote\":\"Really loving Spring Boot, makes stand alone Spring apps easy.\"}}",
+    "convertedResponse" : null
+  },
+  "proxy" : null
+}

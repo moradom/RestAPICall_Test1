@@ -1,0 +1,87 @@
+{
+  "basePath" : "${rest.credirisk.basepath}",
+  "paths" : {
+    "/v1/variable" : {
+      "x-WM-BASE_PATH" : "/v1/variable",
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-RELATIVE_PATH" : "",
+      "get" : {
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "operationId" : "credirisk_RestServiceVirtualController-invoke",
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "x-WM-IS_LIST" : true,
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/RootResponseROOTEntryItem"
+              }
+            },
+            "description" : "Success"
+          }
+        },
+        "tags" : [ "RestServiceVirtualController" ],
+        "consumes" : [ "text/xml" ]
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.credirisk.scheme}://${rest.credirisk.host}${rest.credirisk.basepath}/v1/variable"
+    }
+  },
+  "host" : "${rest.credirisk.host}",
+  "schemes" : [ "${rest.credirisk.scheme}" ],
+  "definitions" : {
+    "RootResponseROOTEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "credirisk.RootResponseROOTEntryItem",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "required" : [ "cDate", "cdate", "enabled", "id", "name", "quantity" ],
+      "properties" : {
+        "cDate" : {
+          "type" : "string"
+        },
+        "cdate" : {
+          "type" : "string"
+        },
+        "quantity" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "enabled" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "credirisk.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "required" : [ "RootResponseROOT" ],
+      "properties" : {
+        "RootResponseROOT" : {
+          "x-WM-IS_LIST" : true,
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/RootResponseROOTEntryItem"
+          }
+        }
+      }
+    }
+  },
+  "swagger" : "2.0",
+  "info" : {
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "x-WM-API_ID" : "489e9bfe-637e-4806-b7e4-308b80aeca7b",
+    "x-WM-SERVICE_ID" : "credirisk",
+    "version" : "2.0",
+    "x-WM-SERVICE_TYPE" : "RestService"
+  },
+  "tags" : [ {
+    "name" : "RestServiceVirtualController",
+    "description" : "Rest service swagger documentation"
+  } ]
+}
