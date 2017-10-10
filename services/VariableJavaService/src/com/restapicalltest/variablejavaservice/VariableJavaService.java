@@ -17,6 +17,7 @@ import com.wavemaker.runtime.service.annotations.HideFromClient;
 
 import pt.credirisk.ruleengine.client.api.VariableApi;
 import pt.credirisk.ruleengine.client.model.Variable;
+import pt.credirisk.ruleengine.client.model.VariableDataCreation;
 
 import java.util.List;
 
@@ -71,4 +72,11 @@ public class VariableJavaService {
          
         return variableApi.listVariables();
     }
+    
+    public void postVariable(VariableDataCreation var, HttpServletRequest request) {
+        logger.debug("Starting sample operation with request url " + request.getRequestURL().toString());
+        //VariableDataCreation var = new VariableDataCreation();
+        //var.setName(name);
+        variableApi.createVariableData(var);
+    }    
 }
