@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import pt.credirisk.ruleengine.client.model.Variable;
 import java.util.List;
 import pt.credirisk.ruleengine.client.model.VariableDataCreation;
+import java.lang.Long;
 import java.lang.String;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.MediaType;
@@ -31,8 +32,10 @@ public class VariableJavaController {
     }
 
     @RequestMapping(value = "/postVariable", method = RequestMethod.POST)
-    public void postVariable(@RequestBody VariableDataCreation var, HttpServletRequest request) {
-        variableJavaService.postVariable(var, request);
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @ApiOperation(value = "")
+    public Long postVariable(@RequestBody VariableDataCreation var, HttpServletRequest request) {
+        return variableJavaService.postVariable(var, request);
     }
 
     @RequestMapping(value = "/sampleJavaOperation", produces = "application/json", method = RequestMethod.GET)

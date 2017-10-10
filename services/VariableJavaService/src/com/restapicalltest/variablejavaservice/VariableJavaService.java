@@ -73,10 +73,10 @@ public class VariableJavaService {
         return variableApi.listVariables();
     }
     
-    public void postVariable(VariableDataCreation var, HttpServletRequest request) {
+    public Long postVariable(VariableDataCreation var, HttpServletRequest request) {
         logger.debug("Starting sample operation with request url " + request.getRequestURL().toString());
         //VariableDataCreation var = new VariableDataCreation();
         //var.setName(name);
-        variableApi.createVariableData(var);
+        return variableApi.createVariableData(var);
     }    
 }
