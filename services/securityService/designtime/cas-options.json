@@ -1,0 +1,11 @@
+{
+  "serverUrl" : "https://castest.credirisk.detalhedecimal.com/cas",
+  "loginUrl" : "https://castest.credirisk.detalhedecimal.com/cas/login",
+  "validationUrl" : "https://castest.credirisk.detalhedecimal.com/cas",
+  "logoutUrl" : "https://castest.credirisk.detalhedecimal.com/cas/logout",
+  "serviceParameter" : "service",
+  "artifactParameter" : "ticket",
+  "roleMappingEnabled" : false,
+  "roleMappingConfig" : null,
+  "attributes" : [ ]
+}
