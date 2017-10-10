@@ -15,8 +15,8 @@ import com.wavemaker.runtime.security.SecurityService;
 import com.wavemaker.runtime.service.annotations.ExposeToClient;
 import com.wavemaker.runtime.service.annotations.HideFromClient;
 
-import com.baeldung.petstore.client.api.VariableApi;
-import com.baeldung.petstore.client.model.Variable;
+import pt.credirisk.ruleengine.client.api.VariableApi;
+import pt.credirisk.ruleengine.client.model.Variable;
 
 import java.util.List;
 

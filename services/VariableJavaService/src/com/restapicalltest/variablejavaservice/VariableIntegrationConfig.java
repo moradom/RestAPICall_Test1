@@ -7,8 +7,8 @@ package com.restapicalltest.variablejavaservice;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.baeldung.petstore.client.api.VariableApi;
-import com.baeldung.petstore.client.invoker.ApiClient;
+import pt.credirisk.ruleengine.client.api.VariableApi;
+import pt.credirisk.ruleengine.client.invoker.ApiClient;
 
 @Configuration
 public class VariableIntegrationConfig {
