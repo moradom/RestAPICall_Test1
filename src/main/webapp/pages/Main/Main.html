@@ -10,8 +10,8 @@
                     <wm-table-column binding="enabled" caption="Enabled" edit-widget-type="checkbox" type="boolean" show="true" readonly="false"></wm-table-column>
                     <wm-table-column binding="cDate.iMillis" caption="Cdate I Millis" edit-widget-type="number" type="long" show="true" readonly="false"></wm-table-column>
                     <wm-table-column binding="cDate.millis" caption="Creation Date" edit-widget-type="datetime" type="datetime" datepattern="yyyy-MM-dd HH:mm:ss" formatpattern="toDate" searchable="false" show="true" readonly="false"></wm-table-column>
-                    <wm-table-column binding="customField" caption="New" widget-type="button" type="string" readonly="true" sortable="false" searchable="false" show="true">
-                        <wm-button caption="{{row.getProperty('customField') || 'Button'}}" show="true" class="btn-sm btn-primary" iconclass="" on-click="Actions.goToPage_createVariableDataPage.invoke({{row.getProperty('Id')}})" data-ng-class=""></wm-button>
+                    <wm-table-column binding="customField" caption="New" widget-type="button" edit-widget-type="text" type="string" readonly="true" sortable="false" searchable="false" show="true">
+                        <wm-button caption="{{row.getProperty('customField') || 'Button'}}" show="true" class="btn-sm btn-primary" iconclass="" on-click="Actions.goToPage_createVariableDataPage.invoke()" data-ng-class=""></wm-button>
                     </wm-table-column>
                 </wm-table>
                 <wm-button class="btn-default" caption="New Variable" type="button" margin="unset 0.5em" name="button1" on-click="Actions.goToPage_createVariableDataPage.invoke()"></wm-button>
