@@ -20,7 +20,10 @@
 }, {
   "name" : "createVariableDataPage",
   "type" : "PAGE",
-  "params" : [ ]
+  "params" : [ {
+    "name" : "variableId",
+    "type" : "integer"
+  } ]
 }, {
   "name" : "createVariableDataPopover",
   "type" : "POPOVER",
