@@ -18,9 +18,11 @@ import com.wavemaker.runtime.service.annotations.HideFromClient;
 import pt.credirisk.ruleengine.client.api.VariableApi;
 import pt.credirisk.ruleengine.client.model.Variable;
 import pt.credirisk.ruleengine.client.model.VariableDataCreation;
+import pt.credirisk.ruleengine.client.model.VariableDataCreation.TypeEnum;
 import pt.credirisk.ruleengine.client.model.VariableDataCreationResult;
 
 import java.util.List;
+import java.util.ArrayList;
 
 //import com.restapicalltest.variablejavaservice.model.*;
 
@@ -81,4 +83,19 @@ public class VariableJavaService {
         var.setUid(securityService.getLoggedInUser().getUserId());
         return variableApi.createVariableData(var);
     }    
+    
+    public List<String> getVariableDataType() {
+        // VariableDataCreation.TypeEnum MyEnum = VariableDataCreation.TypeEnum;
+        //String a = TypeEnum.STRATEGY.toString();
+        ArrayList<String> a = new ArrayList();
+        for (TypeEnum t : TypeEnum.values()) {
+            a.add(t.getValue());
+        }
+        return a;
+        /*
+        return  Stream.of(TypeEnum.values())
+                               .map(TypeEnum::name)
+                               .collect(Collectors.toList());
+        */
+    }
 }

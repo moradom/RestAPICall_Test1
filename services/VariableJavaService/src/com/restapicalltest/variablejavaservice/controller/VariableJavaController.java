@@ -2,13 +2,13 @@
 package com.restapicalltest.variablejavaservice.controller;
 
 import com.restapicalltest.variablejavaservice.VariableJavaService;
+import java.lang.String;
+import java.util.List;
 import java.lang.Boolean;
 import javax.servlet.http.HttpServletRequest;
 import pt.credirisk.ruleengine.client.model.Variable;
-import java.util.List;
 import pt.credirisk.ruleengine.client.model.VariableDataCreation;
 import pt.credirisk.ruleengine.client.model.VariableDataCreationResult;
-import java.lang.String;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.MediaType;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +24,11 @@ public class VariableJavaController {
 
     @Autowired
     private VariableJavaService variableJavaService;
+
+    @RequestMapping(value = "/variableDataType", method = RequestMethod.GET)
+    public List<String> getVariableDataType() {
+        return variableJavaService.getVariableDataType();
+    }
 
     @RequestMapping(value = "/variables", method = RequestMethod.GET)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
