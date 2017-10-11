@@ -16,20 +16,6 @@
                 </wm-table>
                 <wm-button class="btn-default" caption="New Variable" type="button" margin="unset 0.5em" name="button1" on-click="Actions.goToPage_createVariableDataPage.invoke()"></wm-button>
                 <wm-livetable formlayout="dialog" name="RenVariableLiveTable1">
-                    <wm-table gridfirstrowselect="true" editmode="dialog" name="RenVariableTable1" title="Ren_variable List" dataset="bind:Variables.Rule_engine_dev_v1RenVariableData.dataSet" navigation="Basic">
-                        <wm-table-column binding="id" caption="Id" primary-key="true" edit-widget-type="number" type="integer" generator="identity" readonly="true" show="true"></wm-table-column>
-                        <wm-table-column binding="name" caption="Name" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
-                        <wm-table-column binding="enabled" caption="Enabled" edit-widget-type="number" type="integer" generator="assigned" show="true" readonly="false"></wm-table-column>
-                        <wm-table-column binding="versionActive" caption="Version Active" edit-widget-type="number" type="integer" generator="assigned" show="true" readonly="false"></wm-table-column>
-                        <wm-table-column binding="cdate" caption="Cdate" edit-widget-type="timestamp" type="timestamp" generator="assigned" datepattern="yyyy-MM-dd HH:mm:ss" formatpattern="toDate" show="true" readonly="false"></wm-table-column>
-                        <wm-table-column binding="udate" caption="Udate" edit-widget-type="timestamp" type="timestamp" generator="assigned" show="true" readonly="false"></wm-table-column>
-                        <wm-table-column binding="uid" caption="Uid" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
-                        <wm-table-column binding="username" caption="Username" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
-                        <wm-table-column binding="rowOperations" caption="Actions" width="120px" type="custom" readonly="true" sortable="false" searchable="false" show="true"></wm-table-column>
-                        <wm-table-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="wi wi-plus" title="New" action="addNewRow()" shortcutkey="" disabled="false"></wm-table-action>
-                        <wm-table-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow()" disabled="false"></wm-table-row-action>
-                        <wm-table-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow()" disabled="false"></wm-table-row-action>
-                    </wm-table>
                     <wm-liveform errormessage="" title="Ren_variable Info" formlayout="dialog" iconclass="wi wi-edit" name="RenVariableLiveForm1" dataset="bind:Variables.Rule_engine_dev_v1RenVariableData.dataSet" captionalign="left" captionposition="top">
                         <wm-layoutgrid columns="3" name="layoutgrid1">
                             <wm-gridrow name="gridrow1">
@@ -76,6 +62,20 @@
                     <wm-table-column binding="quantity" caption="Quantity" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>
                     <wm-table-column binding="cDate.iMillis" caption="Cdate I Millis" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>
                     <wm-table-column binding="cDate.millis" caption="Current Date" edit-widget-type="datetime" type="datetime" datepattern="yyyy-MM-dd HH:mm:ss:sss" formatpattern="toDate" searchable="false" show="true" readonly="false"></wm-table-column>
+                </wm-table>
+                <wm-table gridfirstrowselect="true" editmode="dialog" name="RenVariableTable1" title="Ren_variable List" dataset="bind:Variables.Rule_engine_dev_v1RenVariableData.dataSet" navigation="Basic">
+                    <wm-table-column binding="id" caption="Id" primary-key="true" edit-widget-type="number" type="integer" generator="identity" readonly="true" show="true"></wm-table-column>
+                    <wm-table-column binding="name" caption="Name" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                    <wm-table-column binding="enabled" caption="Enabled" edit-widget-type="number" type="integer" generator="assigned" show="true" readonly="false"></wm-table-column>
+                    <wm-table-column binding="versionActive" caption="Version Active" edit-widget-type="number" type="integer" generator="assigned" show="true" readonly="false"></wm-table-column>
+                    <wm-table-column binding="cdate" caption="Cdate" edit-widget-type="timestamp" type="timestamp" generator="assigned" datepattern="yyyy-MM-dd HH:mm:ss" formatpattern="toDate" show="true" readonly="false"></wm-table-column>
+                    <wm-table-column binding="udate" caption="Udate" edit-widget-type="timestamp" type="timestamp" generator="assigned" show="true" readonly="false"></wm-table-column>
+                    <wm-table-column binding="uid" caption="Uid" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                    <wm-table-column binding="username" caption="Username" edit-widget-type="text" type="string" generator="assigned" show="true" readonly="false"></wm-table-column>
+                    <wm-table-column binding="rowOperations" caption="Actions" width="120px" type="custom" readonly="true" sortable="false" searchable="false" show="true"></wm-table-column>
+                    <wm-table-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="wi wi-plus" title="New" action="addNewRow()" shortcutkey="" disabled="false"></wm-table-action>
+                    <wm-table-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow()" disabled="false"></wm-table-row-action>
+                    <wm-table-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow()" disabled="false"></wm-table-row-action>
                 </wm-table>
             </wm-composite>
             <wm-composite name="composite2">
