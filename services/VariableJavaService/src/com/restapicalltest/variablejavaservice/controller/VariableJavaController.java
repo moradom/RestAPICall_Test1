@@ -2,11 +2,12 @@
 package com.restapicalltest.variablejavaservice.controller;
 
 import com.restapicalltest.variablejavaservice.VariableJavaService;
+import java.lang.Boolean;
 import javax.servlet.http.HttpServletRequest;
 import pt.credirisk.ruleengine.client.model.Variable;
 import java.util.List;
 import pt.credirisk.ruleengine.client.model.VariableDataCreation;
-import java.lang.Long;
+import pt.credirisk.ruleengine.client.model.VariableDataCreationResult;
 import java.lang.String;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.MediaType;
@@ -25,16 +26,14 @@ public class VariableJavaController {
     private VariableJavaService variableJavaService;
 
     @RequestMapping(value = "/variables", method = RequestMethod.GET)
-    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-    @ApiOperation(value = "")
-    public List<Variable> listVariables(HttpServletRequest request) {
-        return variableJavaService.listVariables(request);
+    public List<Variable> listVariables(@RequestParam(value = "enabled", required = false) Boolean enabled, HttpServletRequest request) {
+        return variableJavaService.listVariables(enabled, request);
     }
 
     @RequestMapping(value = "/postVariable", method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @ApiOperation(value = "")
-    public Long postVariable(@RequestBody VariableDataCreation var, HttpServletRequest request) {
+    public VariableDataCreationResult postVariable(@RequestBody VariableDataCreation var, HttpServletRequest request) {
         return variableJavaService.postVariable(var, request);
     }
 
