@@ -19,6 +19,7 @@ import pt.credirisk.ruleengine.client.api.VariableApi;
 import pt.credirisk.ruleengine.client.model.Variable;
 import pt.credirisk.ruleengine.client.model.VariableDataCreation;
 import pt.credirisk.ruleengine.client.model.VariableDataCreation.TypeEnum;
+import pt.credirisk.ruleengine.client.model.VariableDataCreation.SourceEnum;
 import pt.credirisk.ruleengine.client.model.VariableDataCreationResult;
 
 import java.util.List;
@@ -98,4 +99,21 @@ public class VariableJavaService {
                                .collect(Collectors.toList());
         */
     }
+    
+    public List<String> getVariableDataSource() {
+      // VariableDataCreation.TypeEnum MyEnum = VariableDataCreation.TypeEnum;
+      //String a = TypeEnum.STRATEGY.toString();
+      ArrayList<String> a = new ArrayList();
+      for (SourceEnum t : SourceEnum.values()) {
+          a.add(t.getValue());
+      }
+      return a;
+        /*
+        return  Stream.of(TypeEnum.values())
+                               .map(TypeEnum::name)
+                               .collect(Collectors.toList());
+        */
+    }
+    
+
 }

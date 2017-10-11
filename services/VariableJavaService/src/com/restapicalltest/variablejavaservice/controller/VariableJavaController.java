@@ -25,7 +25,16 @@ public class VariableJavaController {
     @Autowired
     private VariableJavaService variableJavaService;
 
+    @RequestMapping(value = "/variableDataSource", method = RequestMethod.GET)
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @ApiOperation(value = "")
+    public List<String> getVariableDataSource() {
+        return variableJavaService.getVariableDataSource();
+    }
+
     @RequestMapping(value = "/variableDataType", method = RequestMethod.GET)
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @ApiOperation(value = "")
     public List<String> getVariableDataType() {
         return variableJavaService.getVariableDataType();
     }

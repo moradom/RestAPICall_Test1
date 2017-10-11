@@ -21,6 +21,28 @@
     "saveInPhonegap" : false,
     "controller" : "VariableJava"
   },
+  "serviceVariable2" : {
+    "_id" : "wm-serviceVariable2-wm.ServiceVariable-1507741845630",
+    "name" : "serviceVariable2",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "string",
+    "service" : "VariableJavaService",
+    "operation" : "getVariableDataSource",
+    "operationId" : "VariableJavaController_getVariableDataSource",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "VariableJava"
+  },
   "VariableJavaServicePostVariable" : {
     "_id" : "wm-VariableJavaServicePostVariable-wm.ServiceVariable-1507716429775",
     "name" : "VariableJavaServicePostVariable",
