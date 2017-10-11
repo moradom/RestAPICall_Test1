@@ -4,7 +4,10 @@
     "name" : "VariableJavaServicePostVariable",
     "owner" : "Page",
     "category" : "wm.ServiceVariable",
-    "dataBinding" : [ ],
+    "dataBinding" : [ {
+      "target" : "VariableDataCreation.variableId",
+      "value" : "bind:pageParams.variableId"
+    } ],
     "type" : "pt.credirisk.ruleengine.client.model.VariableDataCreationResult",
     "service" : "VariableJavaService",
     "operation" : "postVariable",
@@ -14,7 +17,7 @@
     "dataSet" : [ ],
     "isList" : false,
     "maxResults" : 20,
-    "onSuccess" : "Actions.goToPage_Main.invoke()",
+    "onSuccess" : "Actions.goToPage_Main.invoke();Actions.appNotification.invoke()",
     "startUpdate" : false,
     "autoUpdate" : false,
     "inFlightBehavior" : "executeLast",
