@@ -1,0 +1,25 @@
+{
+  "VariableJavaServicePostVariable" : {
+    "_id" : "wm-VariableJavaServicePostVariable-wm.ServiceVariable-1507715739914",
+    "name" : "VariableJavaServicePostVariable",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "pt.credirisk.ruleengine.client.model.VariableDataCreationResult",
+    "service" : "VariableJavaService",
+    "operation" : "postVariable",
+    "operationId" : "VariableJavaController_postVariable",
+    "operationType" : "post",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "VariableJava"
+  }
+}

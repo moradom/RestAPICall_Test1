@@ -26,6 +26,8 @@ public class VariableJavaController {
     private VariableJavaService variableJavaService;
 
     @RequestMapping(value = "/variables", method = RequestMethod.GET)
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    @ApiOperation(value = "")
     public List<Variable> listVariables(@RequestParam(value = "enabled", required = false) Boolean enabled, HttpServletRequest request) {
         return variableJavaService.listVariables(enabled, request);
     }

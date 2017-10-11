@@ -15,6 +15,17 @@
     } ],
     "operation" : "toast"
   },
+  "goToPage_createVariableDataPage" : {
+    "_id" : "wm-goToPage_createVariableDataPage-wm.NavigationVariable-1507716360873",
+    "name" : "goToPage_createVariableDataPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "createVariableDataPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "goToPage_Main" : {
     "_id" : "wm-wm.NavigationVariable1389180517517",
     "name" : "goToPage_Main",

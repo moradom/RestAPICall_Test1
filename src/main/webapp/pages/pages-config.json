@@ -11,6 +11,21 @@
   "type" : "PAGE",
   "params" : [ ]
 }, {
+  "name" : "createVariableData",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "variableId",
+    "type" : "integer"
+  } ]
+}, {
+  "name" : "createVariableDataPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "createVariableDataPopover",
+  "type" : "POPOVER",
+  "params" : [ ]
+}, {
   "name" : "footer",
   "type" : "FOOTER",
   "params" : [ ]

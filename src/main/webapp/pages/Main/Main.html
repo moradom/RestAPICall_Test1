@@ -1,9 +1,7 @@
 <wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="Main">
     <wm-header content="header" name="header" height="auto"></wm-header>
-    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
     <wm-content name="XXX">
-        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px">
+        <wm-page-content columnwidth="12" name="mainContent" padding="unset 15px">
             <wm-composite name="composite1">
                 <wm-table name="listVariablesTable1" title="" dataset="bind:Variables.VariableJavaServiceListVariables4.dataSet" navigation="Basic">
                     <wm-table-column binding="quantity" caption="Quantity" edit-widget-type="number" type="integer" datepattern="yyyy-MM-dd hh:mm:ss a" formatpattern="toDate" show="true" readonly="false"></wm-table-column>
@@ -13,6 +11,7 @@
                     <wm-table-column binding="cDate.iMillis" caption="Cdate I Millis" edit-widget-type="number" type="long" show="true" readonly="false"></wm-table-column>
                     <wm-table-column binding="cDate.millis" caption="Creation Date" edit-widget-type="datetime" type="datetime" datepattern="yyyy-MM-dd HH:mm:ss" formatpattern="toDate" searchable="false" show="true" readonly="false"></wm-table-column>
                 </wm-table>
+                <wm-button class="btn-default" caption="New Variable" type="button" margin="unset 0.5em" name="button1" on-click="Actions.goToPage_createVariableDataPage.invoke()"></wm-button>
                 <wm-livetable formlayout="dialog" name="RenVariableLiveTable1">
                     <wm-table gridfirstrowselect="true" editmode="dialog" name="RenVariableTable1" title="Ren_variable List" dataset="bind:Variables.Rule_engine_dev_v1RenVariableData.dataSet" navigation="Basic">
                         <wm-table-column binding="id" caption="Id" primary-key="true" edit-widget-type="number" type="integer" generator="identity" readonly="true" show="true"></wm-table-column>
@@ -83,7 +82,6 @@
                 </wm-container>
             </wm-composite>
         </wm-page-content>
-        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>
     <wm-footer name="footer" content="footer"></wm-footer>
 </wm-page>

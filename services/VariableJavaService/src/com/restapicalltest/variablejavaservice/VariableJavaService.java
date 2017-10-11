@@ -77,7 +77,8 @@ public class VariableJavaService {
     public VariableDataCreationResult postVariable(VariableDataCreation var, HttpServletRequest request) {
         logger.debug("Starting sample operation with request url " + request.getRequestURL().toString());
         //VariableDataCreation var = new VariableDataCreation();
-        //var.setName(name);
+        var.setUsername(securityService.getLoggedInUser().getUserName());
+        var.setUid(securityService.getLoggedInUser().getUserId());
         return variableApi.createVariableData(var);
     }    
 }
