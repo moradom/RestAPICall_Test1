@@ -11,27 +11,28 @@
                     </wm-gridrow>
                     <wm-gridrow name="gridrow2">
                         <wm-gridcolumn columnwidth="12" name="gridcolumn1">
-                            <wm-form-field readonly="false" name="VariableDataCreation_jsonData" displayname="Json Data" key="VariableDataCreation.jsonData" type="string" show="true" widget="text" required="true"></wm-form-field>
+                            <wm-form-field name="VariableDataCreation_jsonData" readonly="false" displayname="Json Data" key="VariableDataCreation.jsonData" type="string" show="true" widget="textarea" required="true" inputtype="text" placeholder="Enter value"></wm-form-field>
                         </wm-gridcolumn>
                     </wm-gridrow>
                     <wm-gridrow name="gridrow3">
                         <wm-gridcolumn columnwidth="12" name="gridcolumn2">
-                            <wm-form-field readonly="false" name="VariableDataCreation_jsonVersion" displayname="Json Version" key="VariableDataCreation.jsonVersion" type="integer" show="true" widget="number" required="true"></wm-form-field>
+                            <wm-form-field name="VariableDataCreation_jsonVersion" readonly="false" displayname="Json Version" key="VariableDataCreation.jsonVersion" type="integer" show="true" widget="number" required="true" inputtype="number" placeholder="Enter value"></wm-form-field>
                         </wm-gridcolumn>
                     </wm-gridrow>
                     <wm-gridrow name="gridrow4">
                         <wm-gridcolumn columnwidth="12" name="gridcolumn3">
-                            <wm-form-field readonly="false" name="VariableDataCreation_name" displayname="Name" key="VariableDataCreation.name" type="string" show="true" widget="text" required="true"></wm-form-field>
+                            <wm-form-field name="VariableDataCreation_name" readonly="false" displayname="Name" key="VariableDataCreation.name" type="string" show="true" widget="text" required="true" inputtype="text" placeholder="Enter value"></wm-form-field>
                         </wm-gridcolumn>
                     </wm-gridrow>
                     <wm-gridrow name="gridrow5">
                         <wm-gridcolumn columnwidth="12" name="gridcolumn4">
-                            <wm-form-field readonly="false" name="VariableDataCreation_source" displayname="Source" key="VariableDataCreation.source" type="string" show="true" widget="select" required="false" dataset="bind:Variables.serviceVariable2.dataSet"></wm-form-field>
+                            <wm-form-field name="VariableDataCreation_source" readonly="false" displayname="Source" key="VariableDataCreation.source" type="string" show="true" widget="select" required="false" dataset="bind:Variables.serviceVariable2.dataSet"
+                                placeholder="Select value"></wm-form-field>
                         </wm-gridcolumn>
                     </wm-gridrow>
                     <wm-gridrow name="gridrow6">
                         <wm-gridcolumn columnwidth="12" name="gridcolumn5">
-                            <wm-form-field readonly="false" name="VariableDataCreation_type" displayname="Type" key="VariableDataCreation.type" type="string" show="true" widget="select" dataset="bind:Variables.serviceVariable1.dataSet"></wm-form-field>
+                            <wm-form-field name="VariableDataCreation_type" readonly="false" displayname="Type" key="VariableDataCreation.type" type="string" show="true" widget="select" dataset="bind:Variables.serviceVariable1.dataSet" placeholder="Select value"></wm-form-field>
                         </wm-gridcolumn>
                     </wm-gridrow>
                 </wm-layoutgrid>
