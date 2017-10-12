@@ -90,7 +90,7 @@ public class VariableJavaService {
         //String a = TypeEnum.STRATEGY.toString();
         ArrayList<String> a = new ArrayList();
         for (TypeEnum t : TypeEnum.values()) {
-            a.add(t.getValue());
+            a.add(t.toString());
         }
         return a;
         /*
@@ -105,7 +105,7 @@ public class VariableJavaService {
       //String a = TypeEnum.STRATEGY.toString();
       ArrayList<String> a = new ArrayList();
       for (SourceEnum t : SourceEnum.values()) {
-          a.add(t.getValue());
+          a.add(t.toString());
       }
       return a;
         /*
