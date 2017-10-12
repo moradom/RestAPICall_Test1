@@ -35,22 +35,27 @@ Application.$controller("listVariablesTable1_1Controller", ["$scope",
 ]);
 
 Application.$controller("listVariablesTable1Controller", ["$scope",
-	function($scope) {
-		"use strict";
-		$scope.ctrlScope = $scope;
-	}
+    function($scope) {
+        "use strict";
+        $scope.ctrlScope = $scope;
+
+        $scope.customFieldAction = function(selectedItemData) {
+            $scope.Variables.goToPage_createVariableDataPage.invoke();
+        };
+
+    }
 ]);
 
 Application.$controller("RenVariableTable1Controller", ["$scope",
-	function($scope) {
-		"use strict";
-		$scope.ctrlScope = $scope;
-	}
+    function($scope) {
+        "use strict";
+        $scope.ctrlScope = $scope;
+    }
 ]);
 
 Application.$controller("RenVariableLiveForm1Controller", ["$scope",
-	function($scope) {
-		"use strict";
-		$scope.ctrlScope = $scope;
-	}
+    function($scope) {
+        "use strict";
+        $scope.ctrlScope = $scope;
+    }
 ]);
