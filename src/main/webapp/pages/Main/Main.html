@@ -1,5 +1,4 @@
 <wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="Main">
-    <wm-header content="header" name="header" height="auto"></wm-header>
     <wm-content name="XXX">
         <wm-page-content columnwidth="12" name="mainContent" padding="unset 15px">
             <wm-composite name="composite1">
@@ -84,8 +83,10 @@
                 <wm-container class="col-md-9" name="container1">
                     <wm-text name="text1" type="datetime-local"></wm-text>
                 </wm-container>
+                <wm-container name="container2"></wm-container>
             </wm-composite>
+            <wm-iframe name="iframe1" iframesrc="https://jaspersoft-ce.credirisk.detalhedecimal.com/jasperserver/flow.html?_flowId=viewReportFlow&amp;_flowId=viewReportFlow&amp;ParentFolderUri=%2Freports%2Finteractive&amp;reportUnit=%2Freports%2Finteractive%2FTableReport&amp;standAlone=true&amp;decorate=no&amp;j_username=jasperadmin&amp;j_password=jasperadmin"
+                height="100%" width="100%"></wm-iframe>
         </wm-page-content>
     </wm-content>
-    <wm-footer name="footer" content="footer"></wm-footer>
 </wm-page>
